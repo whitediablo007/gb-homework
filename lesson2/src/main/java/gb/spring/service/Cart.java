@@ -53,11 +53,10 @@ public class Cart {
                 map.put(product, map.get(product) - amount);
             }
             System.out.println(productRepository.getById(id).getName() + " removed.");
-        }catch (Exception p){
+        } catch (Exception p) {
             System.err.println("This product not found");
         }
     }
-
 
     public void clear() {
         map.clear();
